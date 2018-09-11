@@ -108,11 +108,21 @@ spec:
           #     secretKeyRef:
           #       name: watson
           #       key: pwd
-          # - name: ODM_URL
-          #   valueFrom:
-          #     secretKeyRef:
-          #       name: odm
-          #       key: url
+          - name: ODM_URL
+            valueFrom:
+              secretKeyRef:
+                name: odm
+                key: url
+          - name: ODM_ID
+            valueFrom:
+              secretKeyRef:
+                name: odm
+                key: id
+          - name: ODM_PWD
+            valueFrom:
+              secretKeyRef:
+                name: odm
+                key: pwd
           - name: JWT_AUDIENCE
             valueFrom:
               secretKeyRef:
