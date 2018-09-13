@@ -1,0 +1,8 @@
+kubectl delete -f manifests/
+mvn package && \
+docker build -t portfolio:latest . && \
+docker tag portfolio:latest mycluster.icp:8500/default/portfolio:pr && \
+docker push mycluster.icp:8500/default/portfolio:pr && \
+sleep 3 && \
+kubectl apply -f manifests/
+

@@ -1,0 +1,8 @@
+#!/bin/bash
+
+helm install --name db2trader1 \
+--set global.image.secretName=db2dockerregistry \
+--set db2inst.password=inst1pw \
+--set options.databasename=trader \
+ibm-charts/ibm-db2oltp-dev
+

@@ -122,12 +122,18 @@ public class Portfolio extends Application {
 
 	private DataSource datasource = null;
 
-	private @Inject @ConfigProperty(name = "ODM_URL") String odmService;
-	private @Inject @ConfigProperty(name = "ODM_ID") String odmId;
-	private @Inject @ConfigProperty(name = "ODM_PWD") String odmPwd;
-	private @Inject @ConfigProperty(name = "WATSON_URL") String watsonService;
-	private @Inject @ConfigProperty(name = "WATSON_ID") String watsonId;
-	private @Inject @ConfigProperty(name = "WATSON_PWD") String watsonPwd;
+	// private @Inject @ConfigProperty(name = "ODM_URL") String odmService;
+	// private @Inject @ConfigProperty(name = "ODM_ID") String odmId;
+	// private @Inject @ConfigProperty(name = "ODM_PWD") String odmPwd;
+	// private @Inject @ConfigProperty(name = "WATSON_URL") String watsonService;
+	// private @Inject @ConfigProperty(name = "WATSON_ID") String watsonId;
+	// private @Inject @ConfigProperty(name = "WATSON_PWD") String watsonPwd;
+	private String odmService = "";
+	private String odmId = "";
+	private String odmPwd = "";
+	private String watsonService = "";
+	private String watsonId = "";
+	private String watsonPwd = "";
 
 	@GET
 	@Path("/")
