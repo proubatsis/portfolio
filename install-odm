@@ -1,0 +1,4 @@
+#!/bin/bash
+
+helm install --name odmtrader1 ibm-charts/ibm-odm-dev
+
